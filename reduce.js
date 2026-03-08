@@ -1,3 +1,5 @@
+//reduce() processes all array elements and combines them into a single result using an accumulator.
+
 // Find Product of All Numbers
 number=  [2, 3, 4];
 

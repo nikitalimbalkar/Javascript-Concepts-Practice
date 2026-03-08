@@ -1,3 +1,6 @@
+//filter() selects elements from an array based on a condition and returns a new array.
+
+//3. Filter Even Numbers
 
 let number= [1 ,2 ,3 ,4 ,5 ,6];
 

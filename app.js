@@ -1,28 +1,15 @@
-const promise1=new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        resolve("Task 1 completed");
-    },1000);
-});
+let now = new Date();
+console.log(now);
 
-const promise2=new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        resolve("Task 2 completed");
-    },3000);
-});
-
-const promise3=new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        reject("Task 3 completed");
-    },5000);
-});
-
-Promise.allSettled([promise1,promise2,promise3])
-.then(results=> {
-    console.log("all task finished:");
-    console.log(results);
-})
-.catch(err=>{
-    console.log("one of the tasks failed:",err);
-});
+// let d1 = new Date("2026-02-20");
+// console.log(d1);
 
 
+// let d2 = new Date(2026, 1, 20, 10, 30, 0);
+// console.log(d2);
+
+
+
+
+
+console.log(now.toDateString());

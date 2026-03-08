@@ -1,3 +1,6 @@
+//map() is used to transform each element of an array and return a new array without modifying the original.
+
+
 // //1. double the ARRAY
 
 let number=[1, 2, 3, 4, 5];
@@ -102,3 +105,6 @@ const studentscores = scores
   .map(score => score + 5);
 
 console.log(studentscores);
+
+
+//

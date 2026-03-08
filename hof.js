@@ -1,3 +1,5 @@
+//A Higher-Order Function is a function that takes another function as an argument or returns a function.
+
 //Q1. Print All Elements Using forEach
 //print each element of the array using forEach.
 
