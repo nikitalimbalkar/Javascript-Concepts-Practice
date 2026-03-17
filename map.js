@@ -45,14 +45,14 @@ const users = [
 ];
 
 //11.Filter Adults
-// const adultnames = users.filter(user=> user.age>=18)
-//                    .map(user => user.name);
-// console.log(adultnames);
+const adultnames = users1.filter(user=> user1.age>=18)
+                   .map(user1 => user1.name);
+console.log(adultnames);
 
 //  Get Names of Adults Only
-const adultnames = users.filter(user=> user.age>18)
+const adultnames1 = users.filter(user=> user.age>18)
                    .map(user => user.name);
-console.log(adultnames);
+console.log(adultnames1);
 
 //12. Product Price Update
 //Increase price by 10% for all products

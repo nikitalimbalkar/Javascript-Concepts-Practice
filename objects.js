@@ -106,20 +106,3 @@ b.details.city = "Chennai";
 
 console.log(a.details.city);
 
-//Build Your Own Deep Copy Function (Conceptual)
-//Without using structuredClone
-//using JSON.stringify + JSON.parse
-//Modify copied object's nested value and prove original is safe.
-
-let obj2 = {
-  name: "Test",
-  nested: { value: 10 }
-};
-
-function deepCopy2(obj2) {
-  return JSON.parse(JSON.stringify(obj2));
-}
-let copiedObj2 = deepCopy2(obj2);
-copiedObj2.nested.value = 20;
-console.log("Original:", obj2.nested.value); 
-console.log("Copied:", copiedObj2.nested.value);

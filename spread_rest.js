@@ -1,130 +1,132 @@
-// //Rest basic exaples
+//Rest basic exaples
 
-// //Create a function that accepts any number of arguments and returns their sum.
+//Create a function that accepts any number of arguments and returns their sum.
 
-// numbers =[1, 2, 3, 4];
-// function sum(...numbers){
-//     return numbers.reduce((acc,curr)=>acc+curr,0);
-// }
-// console.log(sum(1,2,3,4));
+numbers =[1, 2, 3, 4];
+function sum(...numbers){
+    return numbers.reduce((acc,curr)=>acc+curr,0);
+}
+console.log(sum(1,2,3,4));
 
-// //Write a function that returns how many values were passed.
+//Write a function that returns how many values were passed.
 
-// function countvalues(...values){
-//     return values.length;
-// }
-// console.log(countvalues(1,2,3,4));
+function countvalues(...values){
+    return values.length;
+}
+console.log(countvalues(1,2,3,4));
 
-// //Write a function that prints:
-// //First argument separately
-// //Remaining arguments as an array
-
-
-// function printArgs(first, ...rest) {
-//   console.log("First argument:", first);
-//   console.log("Remaining arguments:", rest);
-// }
-
-// printArgs(10, 20, 30, 40, 50);
-
-// //Create a function using REST that returns the largest number.
-
-// function findlargest(...numbers){
-//     return Math.max(...numbers);
-// }
-// console.log(findlargest(10,20,30,40,50));
-
-// // Create a Shopping Cart
-
-// function addToCart(userName, ...items) {
-//   return userName + " added " + items.length + " items";
-// }
-
-// console.log(addToCart("Nikita", "Shirt", "Shoes", "Cap"));
-
-// //Remove a Property Using REST
-
-// const user = {
-//   name: "Nikita",
-//   age: 30,
-//   city: "Delhi"
-// };
-
-// const { age,...rest} = user
-// console.log(rest);
+//Write a function that prints:
+//First argument separately
+//Remaining arguments as an array
 
 
-// //spread basic examples
+function printArgs(first, ...rest) {
+  console.log("First argument:", first);
+  console.log("Remaining arguments:", rest);
+}
 
-// // Copy an Array
+printArgs(10, 20, 30, 40, 50);
 
-// const arr1 = [1, 2, 3];
-// const arr2 = [...arr1];
-// console.log(arr2);
+//Create a function using REST that returns the largest number.
 
-// //Merge Two Arrays
+function findlargest(...numbers){
+    return Math.max(...numbers);
+}
+console.log(findlargest(10,20,30,40,50));
 
-// const frontend = ["HTML","CSS"]
-// const backend = ["Node","DB"]
-// const mergedArray = [...frontend, ...backend];
-// console.log(mergedArray);
+// Create a Shopping Cart
 
-// // Insert Value in Between
+function addToCart(userName, ...items) {
+  return userName + " added " + items.length + " items";
+}
 
-// const arr = [1, 2, 4, 5];
-// const newValue = [...arr.slice(0, 2), 3, ...arr.slice(2)];
-// console.log(newValue);
+console.log(addToCart("Nikita", "Shirt", "Shoes", "Cap"));
 
-// //Clone an Object
-// {
-// const user = {
-//   name: "Nikita",
-//   age: 22
-// };
+//Remove a Property Using REST
 
-// const newUser = {
-//   ...user,
-//   status: "active"
-// };
+const user = {
+  name: "Nikita",
+  age: 30,
+  city: "Delhi"
+};
 
-// console.log(newUser);
-// }
+const { age,...rest} = user
+console.log(rest);
 
 
-// //Override Property
+//spread basic examples
 
-// const oldConfig = { theme: "light" };
-// const newConfig = { ...oldConfig, theme: "dark" };
-// console.log(newConfig);
+// Copy an Array
 
-// // Merge Two Objects
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1];
+console.log(arr2);
 
-// const basic = { name:"Sam" }
-// const details = { age:25, city:"Pune" }
-// const mergedObject = { ...basic, ...details };
-// console.log(mergedObject);  
+//Merge Two Arrays
 
-// //Combine Multiple Arrays
+const frontend = ["HTML","CSS"]
+const backend = ["Node","DB"]
+const mergedArray = [...frontend, ...backend];
+console.log(mergedArray);
 
-// page1 = [1,2]
-// page2 = [3,4]
-// page3 = [5,6]
+// Insert Value in Between
 
-// const combinedPages = [...page1, ...page2, ...page3];
-// console.log(combinedPages);
+const arr = [1, 2, 4, 5];
+const newValue = [...arr.slice(0, 2), 3, ...arr.slice(2)];
+console.log(newValue);
 
-// //Convert Function Arguments into Array
+//Clone an Object
+{
+const user = {
+  name: "Nikita",
+  age: 22
+};
 
-// function toUpperCaseAll(...args) {
-//   return args.map(function(item) {
-//     return item.toUpperCase();
-//   });
-// }
+const newUser = {
+  ...user,
+  status: "active"
+};
 
-// console.log(toUpperCaseAll("apple", "banana", "mango"));
+console.log(newUser);
+}
 
-//. Immutable Update 
+
+//Override Property
+
+const oldConfig = { theme: "light" };
+const newConfig = { ...oldConfig, theme: "dark" };
+console.log(newConfig);
+
+// Merge Two Objects
+
+const basic = { name:"Sam" }
+const details = { age:25, city:"Pune" }
+const mergedObject = { ...basic, ...details };
+console.log(mergedObject);  
+
+//Combine Multiple Arrays
+
+page1 = [1,2]
+page2 = [3,4]
+page3 = [5,6]
+
+const combinedPages = [...page1, ...page2, ...page3];
+console.log(combinedPages);
+
+//Convert Function Arguments into Array
+
+function toUpperCaseAll(...args) {
+  return args.map(function(item) {
+    return item.toUpperCase();
+  });
+}
+
+console.log(toUpperCaseAll("apple", "banana", "mango"));
+
+
+//Immutable Update 
 //Update this object without mutating original:
+
 
 const state = { name: "User", loggedIn: false };
 
@@ -138,10 +140,10 @@ console.log(state);
 
 //Merge Arrays Without Duplicates
 
-let arr1 = [1, 2, 3];
-let arr2 = [3, 4, 5];
-let mergedArray = [...new Set([...arr1, ...arr2])];
-console.log(mergedArray);
+let array1 = [1, 2, 3];
+let array2 = [3, 4, 5];
+let mergedArray1 = [...new Set([...array1, ...array2])];
+console.log(mergedArray1);
 
 // Separate One Field, Keep Rest
 
@@ -177,7 +179,7 @@ console.log(multiply(...nums));
 
 //Nested Object Copy Issue (Conceptual)
 
-const user = {
+const user1 = {
   name: "John",
   address: {
     city: "Mumbai",
@@ -185,9 +187,9 @@ const user = {
   }
 };
 
-const newUser = { ...user };
+const newUser = { ...user1 };
 newUser.address.city = "Pune";
-console.log(user);
+console.log(user1);
 console.log(newUser);
 
 //Build Your Own Math Utility
@@ -200,18 +202,12 @@ console.log(newUser);
 function add(...numbers) {
   return numbers.reduce((sum, num) => sum + num, 0);
 }
-
 console.log(add(10, 20, 30, 40));
-
-//
 
 function subtract(...numbers) {
   return numbers.reduce((acc, num) => acc - num);
 }
-
 console.log(subtract(100, 20, 10));
-
-//
 
 function multiplyAll(...numbers) {
   return numbers.reduce((product, num) => product * num, 1);
